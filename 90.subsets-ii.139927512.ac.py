@@ -37,6 +37,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        # O(2^n)
         res = []
         nums = sorted(nums)
         self.backtracking(nums, res, [],0)

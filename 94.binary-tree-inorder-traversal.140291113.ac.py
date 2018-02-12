@@ -41,6 +41,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
+        # O(n)
         res = []
         self.traverse(root, res)
         return res

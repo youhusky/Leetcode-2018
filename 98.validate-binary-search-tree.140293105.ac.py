@@ -55,6 +55,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        # O (n)
         return self.check(root, float('-inf'), float('inf'))
     
     def check(self, root, left, right):

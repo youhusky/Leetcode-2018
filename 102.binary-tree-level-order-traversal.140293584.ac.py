@@ -47,6 +47,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
+        # O(n), O(n)
         res = []
         
         if not root:

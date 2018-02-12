@@ -70,6 +70,7 @@ class Solution(object):
         :type q: TreeNode
         :rtype: bool
         """
+        # O(n), O(lgn) -> for each func, call recursion lgn times 
         if not p and not q:
             return True
         if not p or not q:

@@ -42,6 +42,7 @@
 #
 class Solution(object):
     def areSentencesSimilar(self, words1, words2, pairs):
+        # O(n), O(n)
         from collections import defaultdict
         if len(words1) != len(words2):
             return False

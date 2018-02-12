@@ -49,6 +49,7 @@ class Solution(object):
         :type pairs: List[List[str]]
         :rtype: bool
         """
+        # O(n+m), O(n)
         # corner case
         if len(words1) != len(words2):
             return False

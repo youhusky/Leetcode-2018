@@ -42,6 +42,7 @@ class Solution(object):
         :type sum: int
         :rtype: bool
         """
+        # O(n), O(lgn)
         # corner case
         if not root:
             return False

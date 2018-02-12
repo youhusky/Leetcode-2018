@@ -51,6 +51,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        # O(n), O(lgn) -> for each func, call recursion lgn times 
         if not root:
             return True
         return self.check(root.left, root.right)

@@ -27,6 +27,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+        # O(n), O(lgn)
         if not root:
             return 0
         left = self.minDepth(root.left)

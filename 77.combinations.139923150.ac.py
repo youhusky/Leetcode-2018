@@ -36,6 +36,7 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
+        # O(2^n)
         res = []
         self.backtracking(n,k,res,[], 1)
         return res

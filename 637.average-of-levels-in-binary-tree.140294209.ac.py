@@ -46,6 +46,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[float]
         """
+        # O(n), O(n)-> all left node
         res = []
         
         if not root:

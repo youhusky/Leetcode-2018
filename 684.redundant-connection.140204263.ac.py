@@ -67,6 +67,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: List[int]
         """
+        # O(n), O(n)
         if not edges:
             return []
         group = [i for i in range(len(edges)*2)]
@@ -74,6 +75,7 @@ class Solution(object):
         for e1, e2 in edges:
             root1 = self.find(e1, group)
             root2 = self.find(e2, group)
+            # Find just output the result
             if root1 == root2:
                 return [e1, e2]
             else:
