@@ -7,7 +7,7 @@
 # Medium (33.26%)
 # Total Accepted:    71.4K
 # Total Submissions: 214.7K
-# Testcase Example:  '1'
+# Testcase Example:  '1' 
 #
 # 
 # Write a program to find the n-th ugly number.
