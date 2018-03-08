@@ -84,4 +84,35 @@ class Solution(object):
             return
         else:
             group[root2] = root1
+
+class Solution2DFS(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        # O(MN)
+        if not grid or not grid[0]:
+            return 0
+        m = len(grid)
+        n = len(grid[0])
+        count = 0
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == '1':
+                    count += 1
+                    self.dfs(i,j,grid)
+        return count
+    
+    def dfs(self, r, c, grid):
+
+        # condition
+        if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == '0':
+            return
+        grid[r][c] = '0'
+        
+        self.dfs(r+1,c,  grid)
+        self.dfs(r-1, c, grid)
+        self.dfs(r, c-1, grid)
+        self.dfs(r, c+1, grid)
         
