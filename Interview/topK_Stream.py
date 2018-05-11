@@ -49,7 +49,7 @@ class Solution2(object):
 	def getTopK(self,k):
 		return [x[1] for x in self.pq]
 
-m = Solution2()
+m = Solution()
 m.addWord("a")
 m.addWord("b")
 m.addWord("a")
