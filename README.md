@@ -1,21 +1,22 @@
- Easy   96/213 ( 45.07 %)  ██████████████░░░░░░░░░░░░░░░░  
- Medi   84/382 ( 21.99 %)  ███████░░░░░░░░░░░░░░░░░░░░░░░  
- Hard   17/161 ( 10.56 %)  ████░░░░░░░░░░░░░░░░░░░░░░░░░░  
+# Leetcode-2018
+Started on Feb 2018 with Python in Leetcode, using leetcode-cli to help me collect question and answers.
+## Stats
+ Easy	198/224 ( 88.39 %)  ███████████████████████████░░░
+ Medium	253/402 ( 62.94 %)  ███████████████████░░░░░░░░░░░  
+ Hard	 62/170 ( 36.47 %)  ███████████░░░░░░░░░░░░░░░░░░░
+ 
+## Tag
+As you can see there are several folders in it, these are the interview question I collected from 1point3acre.com
 
- public int numberOfGroup(Set<DLinkedNode> set){
-        Map<DLinkedNode, Integer> map = new HashMap<>();
-        . From 1point 3acres bbs
-        int count = 0;. 
-        for(DLinkedNode node : set){
-            count++;.
-            int sameGroup= map.getOrDefault(node, 0);
-            count -= sameGroup;
-            
-            if(node.pre!=null). more info on 1point3acres.com
-                map.put(node.pre, map.getOrDefault(node.pre, 0)+1);
-            if(node.post!=null)
-                map.put(node.post, map.getOrDefault(node.post, 0)+1);
-        }
-        
-        return count;
-    }
+# Some useful links
+## Facebook
+When I prepared Fackbook onsite interview, these questions are all in Leetcode tag and reallly common in the real interview  
+
+[Facebook_Prepare](https://github.com/youhusky/Facebook_Prepare)  
+
+Some company’s tag in Leetcode. 
+
+[Leetcode_tag](https://github.com/youhusky/Leetcode_Company)
+
+
+
